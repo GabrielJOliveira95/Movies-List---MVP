@@ -16,7 +16,7 @@ class MoviesListAdapter(private val list: SimilarMoviesResponse) : RecyclerView.
         fun bind(result: Result) {
             binding.movieTitle.text = result.title
             binding.movieDescription.text = getGenre(result)
-            Picasso.get().load(AppConstants.BASE_URL + result.backdrop_path).into(binding.movieLogo)
+            Picasso.get().load(AppConstants.BASE_URL_PHOTO + result.backdrop_path).into(binding.movieLogo)
         }
 
         companion object {

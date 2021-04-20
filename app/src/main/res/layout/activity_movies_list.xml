@@ -113,7 +113,6 @@
         android:layout_height="300dp"
         android:contentDescription="@string/photo_main_movie"
         android:scaleType="centerCrop"
-        app:srcCompat="@drawable/ic_launcher_background"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

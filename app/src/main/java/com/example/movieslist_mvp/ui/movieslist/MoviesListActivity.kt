@@ -40,9 +40,10 @@ class MoviesListActivity : AppCompatActivity(), MoviesListContract.View {
                 binding.popularutyTv.text = responseMainMovie?.popularity.toString()
                 binding.mainMovieTitle.text = responseMainMovie?.title
                 adapter = MoviesListAdapter(responseSimilarMovies!!)
+
                 configRecyclerView(adapter)
             } catch (e: Exception) {
-               e.printStackTrace()
+                e.printStackTrace()
             }
         }
     }
