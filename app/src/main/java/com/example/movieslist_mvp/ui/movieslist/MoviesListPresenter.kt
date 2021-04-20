@@ -15,16 +15,21 @@ class MoviesListPresenter(private val view: MoviesListContract.View, private val
                 view.showError(response.message().toString())
             }
         } catch (e: Exception) {
-
+            view.showErrorException(e.message.toString())
         }
         return null
     }
 
     override suspend fun getSimilarMovies(): SimilarMoviesResponse? {
         try {
-
+            val response = repository.getSimilarMovies()
+            if (response.isSuccessful) {
+                return response.body()
+            } else {
+                view.showError(response.message().toString())
+            }
         } catch (e: Exception) {
-
+            e.printStackTrace()
         }
         return null
     }

@@ -9,4 +9,5 @@
     <string name="icon_likes">icon likes</string>
     <string name="icon_movie_total_views">icon movie total views</string>
     <string name="photo_main_movie">photo main movie</string>
+    <string name="sem_internet_verifique_sua_conex_o_e_tente_novamente">Ops! Tivemos um problema, verifique sua conexão e tente novamente</string>
 </resources>

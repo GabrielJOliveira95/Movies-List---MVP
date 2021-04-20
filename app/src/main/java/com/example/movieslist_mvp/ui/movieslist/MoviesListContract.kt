@@ -7,6 +7,7 @@ interface MoviesListContract {
     interface View{
         fun showLoading(success: Boolean)
         fun showError(error: String)
+        fun showErrorException(error: String)
     }
 
     interface Presenter{
