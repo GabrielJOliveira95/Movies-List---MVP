@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Movies List - MVP</string>
+    <string name="loginscreenprofilephoto">loginScreenProfilePhoto</string>
+    <string name="loginScreenLoginTxt">Nome</string>
+    <string name="loginScreenBtn">Entrar</string>
+    <string name="loginScreenPasswordTxt">Senha</string>
+    <string name="likes">likes</string>
+    <string name="views">views</string>
+    <string name="icon_likes">icon likes</string>
+    <string name="icon_movie_total_views">icon movie total views</string>
+    <string name="photo_main_movie">photo main movie</string>
 </resources>
