@@ -1,9 +1,11 @@
-package com.example.movieslist_mvp
+package com.example.movieslist_mvp.ui.login
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.example.movieslist_mvp.databinding.ActivityMainBinding
+import com.example.movieslist_mvp.ui.movieslist.MoviesListActivity
 
 class MainActivity : AppCompatActivity(), MainContract.View {
     private lateinit var binding: ActivityMainBinding
@@ -27,5 +29,10 @@ class MainActivity : AppCompatActivity(), MainContract.View {
 
     override fun showErroToast(erro: String) {
         Toast.makeText(applicationContext, erro, Toast.LENGTH_LONG).show()
+    }
+
+    override fun goToMoviesScreen() {
+        val intent = Intent(this@MainActivity, MoviesListActivity::class.java)
+        startActivity(intent)
     }
 }
